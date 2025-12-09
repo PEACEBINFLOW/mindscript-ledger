@@ -1,0 +1,19 @@
+{
+  "id": "entry-0001",
+  "timestamp": "2025-12-09T10:00:00Z",
+  "entry_type": "input_only",
+  "input": "<MIND_SCRIPT>...simple name list request...</MIND_SCRIPT>",
+  "output_ref": null,
+  "pattern_hash": "abc123patternhash",
+  "stage": 1,
+  "logic_block": "name_list_generator",
+  "thread_id": "thread-demo-01",
+  "links": {
+    "prev": null,
+    "next": []
+  },
+  "meta": {
+    "model": "gpt-5.1-thinking",
+    "source": "mindscript-templates/2.1-outline-generator"
+  }
+}
