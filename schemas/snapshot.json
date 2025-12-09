@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Snapshot",
+  "type": "object",
+  "properties": {
+    "snapshot_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "thread_id": { "type": "string" },
+    "entry_range": {
+      "type": "object",
+      "properties": {
+        "start": { "type": "string" },
+        "end": { "type": "string" }
+      },
+      "required": ["start", "end"]
+    },
+    "state_summary": { "type": "object" }
+  },
+  "required": ["snapshot_id", "timestamp", "thread_id", "entry_range"]
+}
