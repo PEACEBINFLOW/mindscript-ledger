@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LedgerEntry",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "entry_type": { "type": "string" },
+    "input": { "type": "string" },
+    "output_ref": { "type": ["string", "null"] },
+    "pattern_hash": { "type": "string" },
+    "stage": { "type": ["integer", "string"] },
+    "logic_block": { "type": "string" },
+    "thread_id": { "type": "string" },
+    "links": {
+      "type": "object",
+      "properties": {
+        "prev": { "type": ["string", "null"] },
+        "next": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["prev", "next"]
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "id",
+    "timestamp",
+    "entry_type",
+    "input",
+    "pattern_hash",
+    "stage",
+    "logic_block",
+    "thread_id",
+    "links"
+  ]
+}
