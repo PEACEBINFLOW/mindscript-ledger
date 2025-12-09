@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LedgerThread",
+  "type": "object",
+  "properties": {
+    "thread_id": { "type": "string" },
+    "root_entry_id": { "type": "string" },
+    "entry_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "summary": { "type": ["string", "null"] }
+  },
+  "required": ["thread_id", "root_entry_id", "entry_ids"]
+}
