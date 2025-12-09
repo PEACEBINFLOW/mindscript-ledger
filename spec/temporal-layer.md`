@@ -1,0 +1,14 @@
+# 3.4-temporal-layer.md  
+## Temporal Layer
+
+Temporal indexing = combination of:
+
+- `timestamp`
+- `thread_id`
+- `sequence_index`
+
+This allows:
+
+- strict ordering of entries
+- replaying a thread from start to finish
+- partial replay (e.g., from entry #5 to #12)
