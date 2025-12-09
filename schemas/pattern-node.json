@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PatternNode",
+  "type": "object",
+  "properties": {
+    "pattern_hash": { "type": "string" },
+    "description": { "type": ["string", "null"] },
+    "frequency": { "type": "integer" },
+    "first_seen_at": { "type": ["string", "null"], "format": "date-time" },
+    "last_seen_at": { "type": ["string", "null"], "format": "date-time" },
+    "example_entry_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["pattern_hash", "frequency"]
+}
