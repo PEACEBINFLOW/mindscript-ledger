@@ -1,0 +1,7 @@
+{
+  "thread_id": "thread-demo-01",
+  "root_entry_id": "entry-0001",
+  "entry_ids": ["entry-0001", "entry-0002", "entry-0003"],
+  "tags": ["demo", "names"],
+  "summary": "Simple multi-stage name generation demo."
+}
